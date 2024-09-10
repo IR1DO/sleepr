@@ -16,7 +16,9 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
         (request: any) =>
           request?.cookies?.Authentication ||
           request?.Authentication ||
-          request?.headers.Authentication,
+          request?.headers?.Authentication,
+        // check to see if there are headers being passed at all,
+        // because in our case with gRPC, there are no headers.
       ]),
       secretOrKey: configService.get('JWT_SECRET'),
     });
