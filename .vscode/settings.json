@@ -1,3 +1,9 @@
 {
-  "cSpell.words": ["eksctl", "nestjs", "pino", "sleepr"]
+  "cSpell.words": [
+    "eksctl",
+    "nestjs",
+    "pino",
+    "sleepr",
+    "supergraph"
+  ]
 }
